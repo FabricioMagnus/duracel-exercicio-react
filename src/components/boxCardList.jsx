@@ -15,8 +15,6 @@ export default function BoxCardList() {
 
     function PopValue() {
         const last = list.length - 1;
-        const splice = list.splice(last)
-        console.log("last",splice);
         setList(list.slice(0,last))
         setValue("");
     }
