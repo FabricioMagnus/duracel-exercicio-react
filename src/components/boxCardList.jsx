@@ -25,7 +25,6 @@ export default function BoxCardList() {
     },[list])
    
 
-    console.log("list:", list);
     return (
         <Flex w={"300px"} h={"fit-content"} flexDirection={"column"} alignItems={"center"}>
             <Flex flexDirection={"row"} h={"30%"}>
@@ -56,9 +55,9 @@ export default function BoxCardList() {
                 </Button>
             </Flex>
             {list &&
-                list.map((item) => {
+                list.map((item, index) => {
                     return (
-                        <Flex w={"232px"} h={"30px"} backgroundColor={'#FFFACD'}justifyContent={"center"} alignItems={"center"} border={"2px solid #000000"}>
+                        <Flex key={index} w={"232px"} h={"30px"} backgroundColor={'#FFFACD'}justifyContent={"center"} alignItems={"center"} border={"2px solid #000000"}>
                             <Text  fontWeight={"bold"}>
                                 {item}
                             </Text>
