@@ -28,7 +28,7 @@ function App() {
                 </Button>
             </Flex>
             <Flex justifyContent={"center"} px={10} py={10} alignItems={"center"}>
-                <SimpleGrid columns={4} spacingY={40} spacingX={30}>
+                <SimpleGrid columns={5} spacingY={40} spacingX={30}>
                     {numPilhas.length? numPilhas.map((item, index)=>{
                       return (
                         <BoxCardList/>
