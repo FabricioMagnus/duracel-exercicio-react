@@ -13,7 +13,7 @@ function App() {
       const last = numPilhas.length - 1;
       setNumPilhas(numPilhas.slice(0,last))
   }
-
+//teste
     return (
         <>
             <Flex mt={14} h={"10vh"} w={"80vw"} margin={"auto"} borderBottomRadius={"30px"} bgColor={"gray"} mb={30} justifyContent={"space-evenly"} alignItems="center">
